@@ -75,12 +75,16 @@ body {
 .title:hover {
   background-color: #384762;
 }
+.titile:focus {
+  outline: none;
+  color: #91140D;
+}
 .title div {
-  font-size: 52px;
+  font-size: 54px;
   color: white;
-  letter-spacing: 2px;
-  margin-top: -10px;
-  margin-left: 10px;
+  letter-spacing: 1px;
+  margin-top: -5px;
+  margin-left: 8px;
 }
 
 .nav {
@@ -98,7 +102,13 @@ body {
   color: black;
   background-color: white;
 }
-
+.nav:focus {
+  outline: none;
+  color: #91140D;
+}
+.nav div {
+  margin-top: 14px;
+}
 
 
 #phonenum {
@@ -106,48 +116,32 @@ body {
   float: right;
   font-size: 34px;
   color: black;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   padding-right: 5px;
-  margin-top: -5px;
+  margin-top: 5px;
 }
-
-
 
 
 
 #iconlinks {
   position: fixed;
-  top: 200px;
-  right: 10px;
+  top: 60px;
+  right: 5px;
   text-align: center;
 }
 #iconlinks a {
-  color: black;
+  color: #384762;
+  margin: 3px;
   transition-duration: 200ms;
 }
 #iconlinks a:hover {
-  color: #000;
-  text-shadow:
-   2px 2px 0 #FFF,
-     -2px -2px 0 #FFF,  
-      2px -2px 0 #FFF,
-      -2px 2px 0 #FFF,
-       2px 2px 0 #FFF;
+  color: #91140D;
 }
 
 #iconlinks a:focus {
   outline: none;
-    color: #000;
-  text-shadow:
-   2px 2px 0 #FFF,
-     -2px -2px 0 #FFF,  
-      2px -2px 0 #FFF,
-      -2px 2px 0 #FFF,
-       2px 2px 0 #FFF;
+    color: #91140D;
 }
-
-
-
 
 
 
@@ -155,13 +149,60 @@ body {
 
 
 #content {
-  font-size: 3vw;
+  font-family: 'Helvetica', sans-serif;
+  width: 60%;
+  font-size: 1.5vw;
   color: #384762;
   margin-top: 100px;
-  margin-left: 100px;
+  margin-left: 40px;
+}
+
+.heading {
+  font-family: 'CapitalPoster', sans-serif;
+  font-size: 2em;
+  color: #91140D;
+  font-weight: normal;
 }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+  text-shadow:
+  2px 2px 0 #91140D,
+  -2px -2px 0 #91140D,  
+  2px -2px 0 #91140D,
+  -2px 2px 0 #91140D,
+  2px 2px 0 #91140D;
+
+*/
