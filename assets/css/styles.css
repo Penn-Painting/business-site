@@ -256,6 +256,9 @@
   margin-top: 32px;
   text-align-last: center;
   text-transform: uppercase; }
+  @media screen and (min-width: 760px), print {
+    .introduction__redirect {
+      margin-top: 100px; } }
 
 body {
   margin: 0;

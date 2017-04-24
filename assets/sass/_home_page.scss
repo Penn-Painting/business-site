@@ -34,4 +34,8 @@ $introduction-content-font-size:     $font-size + 4px;
         margin-top: quadruple($spacing-unit);
         text-align-last: center;
         text-transform: uppercase;
+
+        @include respond-to($medium-breakpoint) {
+            margin-top: 100px;
+        }
     }
