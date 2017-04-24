@@ -17,6 +17,9 @@
   font-family: CapitalPosterCd;
   src: local("CapitalPosterCd"), url("../../assets/dependencies/fontishness/CapitalPosterCd.ttf"); }
 /**
+ * Text sizes
+ */
+/**
  * Default global spacing units
  */
 /**
@@ -66,13 +69,19 @@
   z-index: -10; }
 
 .background__image {
+  transform: translate(-50%, 0);
+  left: 50%;
+  bottom: 0;
+  opacity: .3;
   position: absolute;
-  right: 0;
-  bottom: 0px;
   margin: auto;
-  /* max-height: 100%;*/
-  max-width: 100%;
   max-height: 100%; }
+  @media screen and (min-width: 760px), print {
+    .background__image {
+      transform: translate(0, 0);
+      left: auto;
+      right: 0;
+      opacity: 1; } }
 
 /*------------------------------------*\
     #PRIMARY-NAV
@@ -91,20 +100,12 @@
   font-family: "CapitalPosterCd", sans-serif;
   float: left;
   height: 50px;
-  width: 200px;
-  /*border-right: solid $black 3px;*/
-  transition-duration: 200ms; }
-  .primary-nav__title:hover {
-    background-color: #384762; }
-  .primary-nav__title:focus {
-    outline: none;
-    color: #91140d; }
-  .primary-nav__title div {
-    font-size: 54px;
-    color: #fff;
-    letter-spacing: 1px;
-    margin-top: -5px;
-    margin-left: 8px; }
+  transition-duration: 200ms;
+  font-size: 54px;
+  color: #fff;
+  letter-spacing: 1px;
+  padding-left: 8px;
+  line-height: 57px; }
 
 .primary-nav__menu-item {
   font-family: "CapitalPoster", sans-serif;
@@ -126,49 +127,133 @@
     margin-top: 14px; }
 
 .primary-nav__phonenum {
+  position: fixed;
+  top: 10px;
+  right: 5px;
   font-family: "CapitalPosterCd", sans-serif;
-  float: right;
   font-size: 34px;
   color: #000;
   letter-spacing: 1px;
-  padding-right: 5px;
-  margin-top: 5px; }
+  text-decoration: none; }
+  .primary-nav__phonenum:hover {
+    text-decoration: none; }
+  @media screen and (min-width: 760px), print {
+    .primary-nav__phonenum {
+      right: 10px; } }
 
+/*------------------------------------*\
+    #BUTTON
+\*------------------------------------*/
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 12px 22px;
+  max-width: 100%;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: none;
+  background: #384762;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s; }
+  .button:hover {
+    text-decoration: none;
+    background: #718db2; }
+
+.button--only-mobile {
+  display: inline-block; }
+  @media screen and (min-width: 760px), print {
+    .button--only-mobile {
+      display: none; } }
+
+.button--only-desktop {
+  display: none; }
+  @media screen and (min-width: 760px), print {
+    .button--only-desktop {
+      display: inline-block; } }
+
+/*------------------------------------*\
+    #SOCIAL-LINKS
+\*------------------------------------*/
 .social-links {
-  position: fixed;
-  top: 60px;
-  right: 5px;
+  margin-top: 64px;
   text-align: center; }
-  .social-links a {
-    color: #384762;
-    margin: 3px;
-    transition-duration: 200ms; }
-  .social-links a:hover {
-    color: #91140d; }
-  .social-links a:focus {
-    outline: none;
-    color: #91140d; }
+  @media screen and (min-width: 760px), print {
+    .social-links {
+      position: fixed;
+      top: 60px;
+      right: 5px;
+      margin-top: 0;
+      text-align: center; } }
+
+.social-links__link {
+  color: #384762;
+  transition-duration: 200ms;
+  display: inline-block; }
+  .social-links__link + .social-links__link {
+    margin-left: 32px; }
+  @media screen and (min-width: 760px), print {
+    .social-links__link {
+      margin: 4px; }
+      .social-links__link + .social-links__link {
+        margin-left: 4px; } }
+
+.social-links__link--only-mobile {
+  display: inline-block; }
+  @media screen and (min-width: 760px), print {
+    .social-links__link--only-mobile {
+      display: none; } }
+
+.social-links__link--only-desktop {
+  display: none; }
+  @media screen and (min-width: 760px), print {
+    .social-links__link--only-desktop {
+      display: inline-block; } }
+
+.social-links__link:hover {
+  color: #718db2; }
+
+.social-links__link:focus {
+  outline: none;
+  color: #718db2; }
+
+.fa.social-links__icon {
+  font-size: 52px; }
+  @media screen and (min-width: 760px), print {
+    .fa.social-links__icon {
+      font-size: 32px; } }
 
 /*------------------------------------*\
     #HOME-PAGE
 \*------------------------------------*/
 .introduction {
-  width: 60%;
-  margin-top: 100px;
-  margin-left: 40px; }
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 100px; }
+  @media screen and (min-width: 760px), print {
+    .introduction {
+      width: 60%;
+      margin-left: 24px; } }
 
 .introduction__heading {
   font-family: "CapitalPoster", sans-serif;
-  font-size: 2em;
+  font-size: 34px;
   color: #91140d;
   font-weight: normal;
   margin: 0; }
 
 .introduction__content {
-  font-size: 1.5vw;
+  font-size: 20px;
   color: #384762; }
 
+.introduction__redirect {
+  margin-top: 32px;
+  text-align-last: center;
+  text-transform: uppercase; }
+
 body {
+  margin: 0;
   background-color: #fff;
   font-family: "Helvetica", sans-serif;
   -webkit-font-smoothing: antialiased;

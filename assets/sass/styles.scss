@@ -7,16 +7,20 @@
 @import 'functions';
 @import 'background';
 @import 'primary_nav';
+@import 'button';
+@import 'social_links';
 @import 'home_page';
 
 
 body {
+    margin: 0;
     background-color: $white;
     font-family: $main-font;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /*letter-spacing: 1px;*/
 }
+
 
 /*
 font-family: 'Homenaje', sans-serif;

@@ -1,0 +1,49 @@
+/*------------------------------------*\
+    #BUTTON
+\*------------------------------------*/
+
+$button-bg-color:                                   $darker-blue;
+$button-color:                                      $white;
+$button-bg-hover-color:                             $lighter-blue;
+$button-padding:                                    12px 22px;
+$button-font-size:                                  16px;
+$button-font-weight:                                800;
+$button-small-font-size:                            10px;
+$button-text-transform:                             none;
+
+
+.button {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: $button-padding;
+    max-width: 100%;
+    color: $button-color;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    text-decoration: none;
+    text-transform: $button-text-transform;
+    background: $button-bg-color;
+    border-radius: $global-border-radius;
+    transition: background 0.2s, color 0.2s;
+
+    &:hover {
+        text-decoration: none;
+        background: $button-bg-hover-color;
+    }
+}
+
+.button--only-mobile {
+    display: inline-block;
+
+    @include respond-to($medium-breakpoint) {
+        display: none;
+    }
+}
+
+.button--only-desktop {
+    display: none;
+
+    @include respond-to($medium-breakpoint) {
+        display: inline-block;
+    }
+}

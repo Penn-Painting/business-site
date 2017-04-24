@@ -7,21 +7,17 @@
  * Colors
  */
 
-$white:           #fff !default;
-$black:           #000 !default;
-$darker-blue:     #384762 !default;
-$lighter-blue:    #718db2 !default;
-$brick-red:       #91140d !default;
-$darker-red:      #6c0000 !default;
+$white:           #fff;
+$black:           #000;
+$darker-blue:     #384762;
+$lighter-blue:    #718db2;
+$brick-red:       #91140d;
+$darker-red:      #6c0000;
 
 
 /**
  * Fonts
  */
-
-$brand-font:      'CapitalPoster', sans-serif;
-$narrow-brand-font:      'CapitalPosterCd', sans-serif;
-$main-font:       'Helvetica', sans-serif;
 
 @font-face {
     font-family: CapitalPoster;
@@ -35,32 +31,45 @@ $main-font:       'Helvetica', sans-serif;
        url('../../assets/dependencies/fontishness/CapitalPosterCd.ttf');
 }
 
+$brand-font:      'CapitalPoster', sans-serif;
+$narrow-brand-font:      'CapitalPosterCd', sans-serif;
+$main-font:       'Helvetica', sans-serif;
+
+
+/**
+ * Text sizes
+ */
+
+$font-size:         16px;
+$line-height:       1.5;
+$letter-spacing:    0.05em;
+
 
 /**
  * Default global spacing units
  */
 
-$spacing-unit:     8px !default;
-$spacing-unit--x2: round($spacing-unit * 2);
-$spacing-unit--x3: round($spacing-unit * 3);
-$spacing-unit--x4: round($spacing-unit * 4);
+$spacing-unit:        8px;
+$spacing-unit--x2:    round($spacing-unit * 2);
+$spacing-unit--x3:    round($spacing-unit * 3);
+$spacing-unit--x4:    round($spacing-unit * 4);
 
 
 /**
  * Breakpoint widths
  */
 
-$small-breakpoint:   700px !default;
-$medium-breakpoint:  760px !default;
-$wide-breakpoint:    960px !default;
-$max-content-width:  1278px !default;
+$small-breakpoint:     700px;
+$medium-breakpoint:    760px;
+$wide-breakpoint:      960px;
+$max-content-width:    1278px;
 
 
 /**
  * Drop Shadow
  */
 
-$global-drop-shadow:      0 0 5px 1px rgba(0, 0, 0, 0.1);
+$global-drop-shadow:    0 0 5px 1px rgba(0, 0, 0, 0.1);
 
 
 /**
@@ -78,4 +87,4 @@ $global-text-shadow:    2px 2px 0 #91140D,
  * Border Radius
  */
 
-$global-border-radius:    5px !default;
+$global-border-radius:    4px;
