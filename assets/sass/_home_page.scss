@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    #HOME-PAGE
+\*------------------------------------*/
+
+
+.introduction {
+    width: 60%;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+    .introduction__heading {
+        font-family: $brand-font;
+        font-size: 2em;
+        color: $brick-red;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .introduction__content {
+        font-size: 1.5vw;
+        color: $darker-blue;
+    }

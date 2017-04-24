@@ -1,0 +1,103 @@
+/*------------------------------------*\
+    #PRIMARY-NAV
+\*------------------------------------*/
+
+
+.primary-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: $lighter-blue;
+    border-top: solid $black 3px;
+    border-bottom: solid $black 3px;
+}
+
+    .primary-nav__title {
+        font-family: $narrow-brand-font;
+        float: left;
+        height: 50px;
+        width: 200px; 
+        /*border-right: solid $black 3px;*/
+        transition-duration: 200ms;
+
+        &:hover {
+            background-color: $darker-blue;
+        }
+
+        &:focus {
+            outline: none;
+            color: $brick-red;
+        }
+
+        & div {
+        font-size: 54px;
+        color: $white;
+        letter-spacing: 1px;
+        margin-top: -5px;
+        margin-left: 8px;
+        }
+    }
+
+    .primary-nav__menu-item {
+        font-family: $brand-font;
+        font-size: 20px;
+        color: $white;
+        text-align: center;
+        float: left;
+        height: 50px;
+        width: 80px; 
+        border-right: solid $black 3px;
+        transition-duration: 200ms;
+
+        &:hover {
+            color: $black;
+            background-color: $white;
+        }
+
+        &:focus {
+            outline: none;
+            color: $brick-red;
+        }
+
+        & div {
+            margin-top: 14px;
+        }
+    }
+
+    .primary-nav__phonenum {
+        font-family: $narrow-brand-font;
+        float: right;
+        font-size: 34px;
+        color: $black;
+        letter-spacing: 1px;
+        padding-right: 5px;
+        margin-top: 5px;
+    }
+
+.social-links {
+    position: fixed;
+    top: 60px;
+    right: 5px;
+    text-align: center;
+
+    & a {
+        color: $darker-blue;
+        margin: 3px;
+        transition-duration: 200ms;
+    }
+
+    & a:hover {
+      color: $brick-red;
+    }
+
+    & a:focus {
+      outline: none;
+        color: $brick-red;
+    }
+}
+
+.social-links__icon {}
+
+

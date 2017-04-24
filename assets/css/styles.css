@@ -1,0 +1,183 @@
+/*------------------------------------*\
+    #MANIFEST
+\*------------------------------------*/
+/*------------------------------------*\
+    #GLOBAL
+\*------------------------------------*/
+/**
+ * Colors
+ */
+/**
+ * Fonts
+ */
+@font-face {
+  font-family: CapitalPoster;
+  src: local("CapitalPoster"), url("../../assets/dependencies/fontishness/CapitalPoster.ttf"); }
+@font-face {
+  font-family: CapitalPosterCd;
+  src: local("CapitalPosterCd"), url("../../assets/dependencies/fontishness/CapitalPosterCd.ttf"); }
+/**
+ * Default global spacing units
+ */
+/**
+ * Breakpoint widths
+ */
+/**
+ * Drop Shadow
+ */
+/**
+ * text Shadow
+ */
+/**
+ * Border Radius
+ */
+/*------------------------------------*\
+    #MIXINS
+\*------------------------------------*/
+/**
+ * respond-to
+ *
+ * Used to create a media query within a Sass selector. By default this mixin
+ * also defines basic print styles.
+ */
+/**
+ * center
+ *
+ * Used to vertically and horizontally center elements within their parent.
+ */
+/*------------------------------------*\
+    #FUNCTIONS
+\*------------------------------------*/
+/**
+ * Math helpers
+ *
+ * Halve and double numbers, with or without units
+ *  - these used to round, there's no need to round with modern browsers
+ */
+/*------------------------------------*\
+    #BACKGROUND
+\*------------------------------------*/
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10; }
+
+.background__image {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  margin: auto;
+  /* max-height: 100%;*/
+  max-width: 100%;
+  max-height: 100%; }
+
+/*------------------------------------*\
+    #PRIMARY-NAV
+\*------------------------------------*/
+.primary-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #718db2;
+  border-top: solid #000 3px;
+  border-bottom: solid #000 3px; }
+
+.primary-nav__title {
+  font-family: "CapitalPosterCd", sans-serif;
+  float: left;
+  height: 50px;
+  width: 200px;
+  /*border-right: solid $black 3px;*/
+  transition-duration: 200ms; }
+  .primary-nav__title:hover {
+    background-color: #384762; }
+  .primary-nav__title:focus {
+    outline: none;
+    color: #91140d; }
+  .primary-nav__title div {
+    font-size: 54px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: -5px;
+    margin-left: 8px; }
+
+.primary-nav__menu-item {
+  font-family: "CapitalPoster", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  float: left;
+  height: 50px;
+  width: 80px;
+  border-right: solid #000 3px;
+  transition-duration: 200ms; }
+  .primary-nav__menu-item:hover {
+    color: #000;
+    background-color: #fff; }
+  .primary-nav__menu-item:focus {
+    outline: none;
+    color: #91140d; }
+  .primary-nav__menu-item div {
+    margin-top: 14px; }
+
+.primary-nav__phonenum {
+  font-family: "CapitalPosterCd", sans-serif;
+  float: right;
+  font-size: 34px;
+  color: #000;
+  letter-spacing: 1px;
+  padding-right: 5px;
+  margin-top: 5px; }
+
+.social-links {
+  position: fixed;
+  top: 60px;
+  right: 5px;
+  text-align: center; }
+  .social-links a {
+    color: #384762;
+    margin: 3px;
+    transition-duration: 200ms; }
+  .social-links a:hover {
+    color: #91140d; }
+  .social-links a:focus {
+    outline: none;
+    color: #91140d; }
+
+/*------------------------------------*\
+    #HOME-PAGE
+\*------------------------------------*/
+.introduction {
+  width: 60%;
+  margin-top: 100px;
+  margin-left: 40px; }
+
+.introduction__heading {
+  font-family: "CapitalPoster", sans-serif;
+  font-size: 2em;
+  color: #91140d;
+  font-weight: normal;
+  margin: 0; }
+
+.introduction__content {
+  font-size: 1.5vw;
+  color: #384762; }
+
+body {
+  background-color: #fff;
+  font-family: "Helvetica", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*letter-spacing: 1px;*/ }
+
+/*
+font-family: 'Homenaje', sans-serif;
+font-family: 'Six Caps', sans-serif;
+*/
+
+/*# sourceMappingURL=styles.css.map */
